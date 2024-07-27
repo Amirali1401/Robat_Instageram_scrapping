@@ -1,0 +1,715 @@
+2024-07-02 13:26:50,933 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2024-07-02 13:26:50,934 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\mechanic rayane\Desktop\instagram_bot\Insta_DM_Project\.venv\Lib\site-packages\instabot\bot\bot.py
+2024-07-02 13:26:50,935 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2024-07-02 13:26:51,996 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2024-07-02 13:26:52,781 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2024-07-02 13:26:53,529 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2024-07-02 13:26:54,283 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2024-07-02 13:26:59,308 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [200]>
+2024-07-02 13:26:59,308 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'amiralifahimi1403@gmail.com'!
+2024-07-02 13:26:59,309 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: True
+2024-07-02 13:27:00,437 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2024-07-02 13:27:01,668 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2024-07-02 13:27:02,965 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: zr/token/result/?device_id=android-dd9f965d6a391de3&token_hash=&custom_device_id=android-dd9f965d6a391de3&fetch_reason=token_expired returned response: <Response [200]>
+2024-07-02 13:27:04,165 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: multiple_accounts/get_account_family/ returned response: <Response [200]>
+2024-07-02 13:27:05,567 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2024-07-02 13:27:07,517 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: igtv/browse_feed/?prefetch=1 returned response: <Response [404]>
+2024-07-02 13:27:07,518 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'<!DOCTYPE html>\n<html lang="None" class="no-js not-logged-in ">\n    <head>\n        <meta charset="utf-8">\n        <meta http-equiv="X-UA-Compatible" content="IE=edge">\n\n        <title>\n                  Page Not Found &bull; Instagram\n                </title>\n\n        \n        <meta name="robots" content="noimageindex, noarchive">\n        <meta name="apple-mobile-web-app-status-bar-style" content="default">\n        <meta name="mobile-web-app-capable" content="yes">\n        <meta name="theme-color" content="#ffffff">\n        \n        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">\n        <link rel="manifest" href="/data/manifest.json">\n\n        \n        \n        \n\n        <script type="text/javascript">\n        (function() {\n  var docElement = document.documentElement;\n  var classRE = new RegExp(\'(^|\\\\s)no-js(\\\\s|$)\');\n  var className = docElement.className;\n  docElement.className = className.replace(classRE, \'$1js$2\');\n})();\n</script>\n        <script type="text/javascript">\n(function() {\n  if (\'PerformanceObserver\' in window && \'PerformancePaintTiming\' in window) {\n    window.__bufferedPerformance = [];\n    var ob = new PerformanceObserver(function(e) {\n      window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());\n    });\n    ob.observe({entryTypes:[\'paint\']});\n  }\n\n  window.__bufferedErrors = [];\n  window.onerror = function(message, url, line, column, error) {\n    window.__bufferedErrors.push({\n      message: message,\n      url: url,\n      line: line,\n      column: column,\n      error: error\n    });\n    return false;\n  };\n  window.__initialData = {\n    pending: true,\n    waiting: []\n  };\n  function asyncFetchSharedData(extra) {\n    var sharedDataReq = new XMLHttpRequest();\n    sharedDataReq.onreadystatechange = function() {\n          if (sharedDataReq.readyState === 4) {\n            if(sharedDataReq.status === 200){\n              var sharedData = JSON.parse(sharedDataReq.responseText);\n              window.__initialDataLoaded(sharedData, extra);\n            }\n          }\n        }\n    sharedDataReq.open(\'GET\', \'/data/shared_data/\', true);\n    sharedDataReq.send(null);\n  }\n  function notifyLoaded(item, data) {\n    item.pending = false;\n    item.data = data;\n    for (var i = 0;i < item.waiting.length; ++i) {\n      item.waiting[i].resolve(item.data);\n    }\n    item.waiting = [];\n  }\n  function notifyError(item, msg) {\n    item.pending = false;\n    item.error = new Error(msg);\n    for (var i = 0;i < item.waiting.length; ++i) {\n      item.waiting[i].reject(item.error);\n    }\n    item.waiting = [];\n  }\n  window.__initialDataLoaded = function(initialData, extraData) {\n    if (extraData) {\n      for (var key in extraData) {\n        initialData[key] = extraData[key];\n      }\n    }\n    notifyLoaded(window.__initialData, initialData);\n  };\n  window.__initialDataError = function(msg) {\n    notifyError(window.__initialData, msg);\n  };\n  window.__additionalData = {};\n  window.__pendingAdditionalData = function(paths) {\n    for (var i = 0;i < paths.length; ++i) {\n      window.__additionalData[paths[i]] = {\n        pending: true,\n        waiting: []\n      };\n    }\n  };\n  window.__additionalDataLoaded = function(path, data) {\n    if (path in window.__additionalData) {\n      notifyLoaded(window.__additionalData[path], data);\n    } else {\n      console.error(\'Unexpected additional data loaded "\' + path + \'"\');\n    }\n  };\n  window.__additionalDataError = function(path, msg) {\n    if (path in window.__additionalData) {\n      notifyError(window.__additionalData[path], msg);\n    } else {\n      console.error(\'Unexpected additional data encountered an error "\' + path + \'": \' + msg);\n    }\n  };\n  \n})();\n</script><script type="text/javascript">\n\n/*\n Copyright 2018 Google Inc. All Rights Reserved.\n Licensed under the Apache License, Version 2.0 (the "License");\n you may not use this file except in compliance with the License.\n You may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\n Unless required by applicable law or agreed to in writing, software\n distributed under the License is distributed on an "AS IS" BASIS,\n WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n See the License for the specific language governing permissions and\n limitations under the License.\n*/\n\n(function(){function g(a,c){b||(b=a,f=c,h.forEach(function(a){removeEventListener(a,l,e)}),m())}function m(){b&&f&&0<d.length&&(d.forEach(function(a){a(b,f)}),d=[])}function n(a,c){function k(){g(a,c);d()}function b(){d()}function d(){removeEventListener("pointerup",k,e);removeEventListener("pointercancel",b,e)}addEventListener("pointerup",k,e);addEventListener("pointercancel",b,e)}function l(a){if(a.cancelable){var c=performance.now(),b=a.timeStamp;b>c&&(c=+new Date);c-=b;"pointerdown"==a.type?n(c,\na):g(c,a)}}var e={passive:!0,capture:!0},h=["click","mousedown","keydown","touchstart","pointerdown"],b,f,d=[];h.forEach(function(a){addEventListener(a,l,e)});window.perfMetrics=window.perfMetrics||{};window.perfMetrics.onFirstInputDelay=function(a){d.push(a);m()}})();\n</script>\n                \n                    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/ico/apple-touch-icon-76x76-precomposed.png/666282be8229.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/ico/apple-touch-icon-120x120-precomposed.png/8a5bd3f267b1.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/ico/apple-touch-icon-152x152-precomposed.png/68193576ffc5.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/static/images/ico/apple-touch-icon-167x167-precomposed.png/4985e31c9100.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/static/images/ico/apple-touch-icon-180x180-precomposed.png/c06fdb2357bd.png">\n                \n                \n                    \n                        <link rel="icon" sizes="192x192" href="/static/images/ico/favicon-192.png/68d99ba29cc8.png">\n                    \n                \n            \n            \n                    \n                        <link rel="shortcut icon" type="image/x-icon" href="/static/images/ico/favicon.ico/36b3ee2d91ed.ico">\n                    \n                \n            \n            \n    \n        <style type="text/css">/* @generated \n * DO NOT CHANGE THIS FILE. Instead, modify the non-build version of "main.css"\n * then run "yolo css"\n */\nbody{-webkit-font-smoothing:antialiased;background-color:#fafafa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}.client-root{font-size:14px}a{text-decoration:none}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__,.-cx-PRIVATE-Page__root__{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.-cx-PRIVATE-Page__root__{height:100vh}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.-cx-PRIVATE-Page__main__{margin-top:137px;position:relative}@media screen and (max-width:990px){.-cx-PRIVATE-Page__main__{display:block;margin-top:0}}.-cx-PRIVATE-NavBar__root__{background-color:#fff;border-bottom:1px solid #efefef;height:77px;position:fixed;top:0;width:100%;z-index:100}.-cx-PRIVATE-NavBar__profilePic__{display:none}.-cx-PRIVATE-NavBar__username__{color:#00376b;display:inline!important;float:right;font-weight:400;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signIn__{display:inline-block;float:right;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signInText__{color:#00376b;font-weight:400}.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup.png/3a62b1a95da3.png);background-size:100%;height:35px;left:16px;position:absolute;text-indent:-9999em;top:6px;width:176px}.-cx-PRIVATE-NavBar__logo__ a{display:block;height:100%;width:100%}@media screen and (-webkit-min-device-pixel-ratio:1.5),screen and (min-resolution:1.5dppx){.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup@2x.png/43608c988939.png)}}.-cx-PRIVATE-NavBar__logoGroup__{left:16px;position:absolute;top:6px}.-cx-PRIVATE-NavBar__logoGroup__ .-cx-PRIVATE-NavBar__logo__{position:static}.-cx-PRIVATE-NavBar__wrapper__{margin:0 auto;max-width:1026px;padding:0 16px;position:relative}.-cx-PRIVATE-NavBar__topBarActions__,.-cx-PRIVATE-SidebarLayout__content__ li{list-style:none}.-cx-PRIVATE-NavBar__dropdown__,.-cx-PRIVATE-NavBar__topBarLeft__,.-cx-PRIVATE-SidebarLayout__content__ .separator,.-cx-PRIVATE-SidebarLayout__content__ .subtitle{display:none}.-cx-PRIVATE-SidebarLayout__content__{border-right:1px solid #efefef;height:100%;width:220px}.-cx-PRIVATE-SidebarLayout__content__ ul{margin:0;padding:0}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__content__{margin:0 px;border:0;width:100%}.-cx-PRIVATE-SidebarLayout__content__ ul{display:none}}.-cx-PRIVATE-SidebarLayout__root__{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;pointer-events:none;position:absolute;width:100%;z-index:1}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__root__{height:auto;padding-bottom:0;padding-top:78px;position:static}}.-cx-PRIVATE-SidebarLayout__contentWrapper__,.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;margin:0 auto;position:relative;width:992px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__navWrapper__{height:100%}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:auto;min-height:0;padding:0;width:100%}}.-cx-PRIVATE-SidebarLayout__nav__{float:left;height:100%;padding-right:0;pointer-events:initial;width:256px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__nav__{float:none;display:block;margin:0!important;background:0 0;border:0;width:100%}}.-cx-PRIVATE-SidebarLayout__contentWrapper__{background-color:#fff;border:1px solid #efefef;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 16px 20px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{border:1px solid #efefef;border-radius:3px}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.-cx-PRIVATE-SidebarLayout__pageContent__ .-cx-PRIVATE-SidebarLayout__contentWrapper__{padding:0 10px}}.-cx-PRIVATE-SidebarLayout__pageContent__{color:#262626;margin-left:205px;padding:30px 50px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__pageContent__{margin-left:0;margin-right:0;padding:20px 0}}.-cx-PRIVATE-SidebarLayout__pageContent__>:first-child{margin-top:0}.-cx-PRIVATE-SidebarLayout__pageContent__ a{color:#00376b}.-cx-PRIVATE-SidebarLayout__pageContent__ h1{font-size:32px;font-weight:400;margin-bottom:20px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h2{font-size:24px;font-weight:400;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h3{font-weight:600;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ li{padding-left:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ li:not(:first-child){margin-top:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ pre{white-space:pre-wrap}.-cx-PRIVATE-Navigation__header__{color:#8e8e8e;font-size:16px;font-weight:initial;margin:0;padding:16px;text-transform:uppercase}@media screen and (max-width:990px){.-cx-PRIVATE-Navigation__header__:first-child{display:block}.-cx-PRIVATE-Navigation__header__:not(:first-child){display:none}.-cx-PRIVATE-Navigation__header__ i{float:left;width:22px;height:18px;margin-right:8px;margin-left:10px;background:url(/static/images/glyphs/disclosure-down@2x.png/9ae8409fbb3a.png) no-repeat center;background-size:14px 14px}.-cx-PRIVATE-SidebarLayout__content__.active .-cx-PRIVATE-Navigation__header__ i{-webkit-transform:rotate(180deg);transform:rotate(180deg)}}.-cx-PRIVATE-Navigation__navLink__,.-cx-PRIVATE-Navigation__navLink__:active,.-cx-PRIVATE-Navigation__navLink__:hover,.-cx-PRIVATE-Navigation__navLink__:visited{border-left:2px solid transparent;-webkit-box-sizing:border-box;box-sizing:border-box;color:#262626;font-size:16px;display:block;padding:16px 16px 16px 30px;width:100%}.-cx-PRIVATE-Navigation__navLink__:hover{border-left-color:#dbdbdb}.-cx-PRIVATE-Navigation__active__ .-cx-PRIVATE-Navigation__navLink__{border-left-color:#262626;font-weight:600}.-cx-PRIVATE-Footer__root__{font-size:12px;height:77px}.-cx-PRIVATE-Footer__copyright__{color:#262626;display:inline-block;float:right;font-weight:600;margin-top:20px;text-transform:uppercase}.-cx-PRIVATE-Footer__nav__{display:inline-block}@media screen and (max-width:990px){.-cx-PRIVATE-Footer__copyright__{text-align:center;width:100%}}.-cx-PRIVATE-Footer__navItems__{margin:20px 0;padding:0;text-align:center}.-cx-PRIVATE-Footer__navItems__ li{display:inline-block;list-style:none}.-cx-PRIVATE-Footer__navItems__ li:not(:first-child){margin-left:15px}.-cx-PRIVATE-Footer__navItems__ a,.-cx-PRIVATE-Footer__navItems__ a:active,.-cx-PRIVATE-Footer__navItems__ a:focus,.-cx-PRIVATE-Footer__navItems__ a:hover,.-cx-PRIVATE-Footer__navItems__ a:visited{color:#00376b;font-weight:600;text-transform:uppercase}.-cx-PRIVATE-Footer__wrapper__{margin-left:auto;margin-right:auto;max-width:1026px;padding:0 20px}.-cx-PRIVATE-ErrorPage__errorContainer__{text-align:center}@media (max-width:990px){.-cx-PRIVATE-ErrorPage__errorContainer__{padding:100px 40px 0}}.-cx-PRIVATE-ErrorPage__errorContainer__ a,.-cx-PRIVATE-ErrorPage__errorContainer__ a:visited{color:#00376b}.-cx-PRIVATE-Linkshim__followLink__{background-color:#fff;color:#0095f6;border:1px solid #0095f6;border-radius:3px;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center;padding:8px;font:inherit;font-weight:700;width:90%}@media (min-width:736px){.-cx-PRIVATE-Linkshim__followLink__{width:10%}}.-cx-PRIVATE-Linkshim__followLink__:active{opacity:.5}.-cx-PRIVATE-Linkshim__followLink__:focus{color:#0074cc;border:1px solid #0074cc}@media (min-width:736px){.-cx-PRIVATE-Linkshim__goBack__{width:6%}}.-cx-PRIVATE-Linkshim__goBack__:active{opacity:.5}.-cx-PRIVATE-Linkshim__goBack__:focus{border:1px solid #0074cc}.-cx-PRIVATE-GatedContentPage__userAvatarContainer__{height:70px;text-align:center}.-cx-PRIVATE-GatedContentPage__userAvatar__{border-radius:50%;height:100%;width:auto}</style>\n    \n\n            \n    <script type="text/javascript" src="/static/scripts/jquery.js/a4e77326039e.js" crossorigin="anonymous"></script>\n    <script type="text/javascript" src="/static/scripts/bluebar.js/203583927eba.js" crossorigin="anonymous"></script>\n</head>\n    <body class=" p-error dialog-404" style="">\n        \n            <div class="root -cx-PRIVATE-Page__root -cx-PRIVATE-Page__root__">\n                \n                    <div class="page -cx-PRIVATE-Page__body -cx-PRIVATE-Page__body__">\n                        \n                            \n                                <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root -cx-PRIVATE-NavBar__root__">\n    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper -cx-PRIVATE-NavBar__wrapper__">\n        <div class="logo -cx-PRIVATE-NavBar__logo -cx-PRIVATE-NavBar__logo__"><a href="/">Instagram</a></div>\n\n        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft -cx-PRIVATE-NavBar__topBarLeft__">\n            <ul class="top-bar-actions">\n                <li>\n                    <a class="top-bar-home" href="/" label=Home><i></i></a>\n                </li>\n            </ul>\n        </div>\n\n        \n            <div class="top-bar-right account-state" id="top_bar_right">\n                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions -cx-PRIVATE-NavBar__topBarActions__">\n                    \n                    \n                      \n                      <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn -cx-PRIVATE-NavBar__signIn__">\n                          <a href="/accounts/login/" class="loginLink">\n                              <i></i>\n                              <strong class="-cx-PRIVATE-NavBar__signInText -cx-PRIVATE-NavBar__signInText__">Log in</strong>\n                          </a>\n                      </li>\n                      \n                    \n                </ul>\n            </div>\n        \n    </div>\n</header> <!-- .top-bar -->\n                            \n                        \n\n                        \n                        <div class="main -cx-PRIVATE-Page__main -cx-PRIVATE-Page__main__">\n                            \n    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer -cx-PRIVATE-ErrorPage__errorContainer__">\n    \n\n    <h2>Sorry, this page isn&#39;t available.</h2>\n\n    <p>\n        The link you followed may be broken, or the page may have been removed.\n        <a href="/">Go back to Instagram.</a>\n    </p>\n\n\n\n    </div>\n\n                        </div> <!-- .main -->\n                        \n\n                    </div> <!-- .page -->\n\n                    \n                    <footer class="page-footer -cx-PRIVATE-Footer__root -cx-PRIVATE-Footer__root__" role="contentinfo">\n                        <div class="wrapper -cx-PRIVATE-Footer__wrapper -cx-PRIVATE-Footer__wrapper__">\n                            <nav class="-cx-PRIVATE-Footer__nav -cx-PRIVATE-Footer__nav__">\n                                <ul class="-cx-PRIVATE-Footer__navItems -cx-PRIVATE-Footer__navItems__">\n                                    <li><a href="/about/us/">About us</a></li>\n                                    <li><a href="https://help.instagram.com/">Support</a></li>\n                                    <li><a href="https://about.instagram.com/blog/">Press</a></li>\n                                    <li><a href="">API</a></li>\n                                    <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>\n                                    <li><a href="/legal/privacy/">Privacy</a></li>\n                                    <li><a href="/legal/terms/">\n                                      \n                                          Terms\n                                      \n                                    </a></li>\n                                    \n                                </ul>\n                            </nav>\n\n                            <p class="copyright -cx-PRIVATE-Footer__copyright -cx-PRIVATE-Footer__copyright__">&copy; 2024 Instagram</p>\n                        </div>\n                    </footer>\n                    \n                \n                <div id="reactModalMountPoint"></div>\n            </div> <!-- .root -->\n        \n        \n\n\n        \n            \n\n            \n        \n\n        <script type="text/javascript">\n(function(){\n  function normalizeError(err) {\n    var errorInfo = err.error || {};\n    var getConfigProp = function(propName, defaultValueIfNotTruthy) {\n      var propValue = window._sharedData && window._sharedData[propName];\n      return propValue ? propValue : defaultValueIfNotTruthy;\n    };\n    var windowUrl = window.location.href;\n    var errUrl = err.url || windowUrl;\n    return {\n      line: err.line || errorInfo.message || 0,\n      column: err.column || 0,\n      name: \'InitError\',\n      message: err.message || errorInfo.message || \'\',\n      script: errorInfo.script || \'\',\n      stack: errorInfo.stackTrace || errorInfo.stack || \'\',\n      timestamp: Date.now(),\n      ref: windowUrl.indexOf(\'direct\') >= 0 ? \'direct\' : windowUrl,\n      deployment_stage: getConfigProp(\'deployment_stage\', \'\'),\n      frontend_env: getConfigProp(\'frontend_env\', \'prod\'),\n      rollout_hash: getConfigProp(\'rollout_hash\', \'\'),\n      is_prerelease: window.__PRERELEASE__ || false,\n      bundle_variant: getConfigProp(\'bundle_variant\', null),\n      request_url: errUrl.indexOf(\'direct\') >= 0 ? \'direct\' : errUrl,\n      response_status_code: errorInfo.statusCode || 0\n    }\n  }\n  window.addEventListener(\'load\', function(){\n    if (window.__bufferedErrors && window.__bufferedErrors.length) {\n      if (window.caches && window.caches.keys && window.caches.delete) {\n        window.caches.keys().then(function(keys) {\n          keys.forEach(function(key) {\n            window.caches.delete(key)\n          })\n        })\n      }\n      window.__bufferedErrors.map(function(error) {\n        return normalizeError(error)\n      }).forEach(function(normalizedError) {\n        var request = new XMLHttpRequest();\n        request.open(\'POST\', \'/client_error/\', true);\n        request.setRequestHeader(\'Content-Type\', \'application/json; charset=utf-8\');\n        request.send(JSON.stringify(normalizedError));\n      })\n    }\n  })\n}());\n</script>\n    </body>\n</html>\n'
+2024-07-02 13:27:07,520 - instabot version: 0.117.0 (api) - ERROR - Error checking for `feedback_required`, response text is not JSON
+2024-07-02 13:27:07,521 - instabot version: 0.117.0 (api) - INFO - Full Response: <Response [404]>
+2024-07-02 13:27:07,521 - instabot version: 0.117.0 (api) - INFO - Response Text: <!DOCTYPE html>
+<html lang="None" class="no-js not-logged-in ">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+                  Page Not Found &bull; Instagram
+                </title>
+
+        
+        <meta name="robots" content="noimageindex, noarchive">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#ffffff">
+        
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+        <link rel="manifest" href="/data/manifest.json">
+
+        
+        
+        
+
+        <script type="text/javascript">
+        (function() {
+  var docElement = document.documentElement;
+  var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+  var className = docElement.className;
+  docElement.className = className.replace(classRE, '$1js$2');
+})();
+</script>
+        <script type="text/javascript">
+(function() {
+  if ('PerformanceObserver' in window && 'PerformancePaintTiming' in window) {
+    window.__bufferedPerformance = [];
+    var ob = new PerformanceObserver(function(e) {
+      window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());
+    });
+    ob.observe({entryTypes:['paint']});
+  }
+
+  window.__bufferedErrors = [];
+  window.onerror = function(message, url, line, column, error) {
+    window.__bufferedErrors.push({
+      message: message,
+      url: url,
+      line: line,
+      column: column,
+      error: error
+    });
+    return false;
+  };
+  window.__initialData = {
+    pending: true,
+    waiting: []
+  };
+  function asyncFetchSharedData(extra) {
+    var sharedDataReq = new XMLHttpRequest();
+    sharedDataReq.onreadystatechange = function() {
+          if (sharedDataReq.readyState === 4) {
+            if(sharedDataReq.status === 200){
+              var sharedData = JSON.parse(sharedDataReq.responseText);
+              window.__initialDataLoaded(sharedData, extra);
+            }
+          }
+        }
+    sharedDataReq.open('GET', '/data/shared_data/', true);
+    sharedDataReq.send(null);
+  }
+  function notifyLoaded(item, data) {
+    item.pending = false;
+    item.data = data;
+    for (var i = 0;i < item.waiting.length; ++i) {
+      item.waiting[i].resolve(item.data);
+    }
+    item.waiting = [];
+  }
+  function notifyError(item, msg) {
+    item.pending = false;
+    item.error = new Error(msg);
+    for (var i = 0;i < item.waiting.length; ++i) {
+      item.waiting[i].reject(item.error);
+    }
+    item.waiting = [];
+  }
+  window.__initialDataLoaded = function(initialData, extraData) {
+    if (extraData) {
+      for (var key in extraData) {
+        initialData[key] = extraData[key];
+      }
+    }
+    notifyLoaded(window.__initialData, initialData);
+  };
+  window.__initialDataError = function(msg) {
+    notifyError(window.__initialData, msg);
+  };
+  window.__additionalData = {};
+  window.__pendingAdditionalData = function(paths) {
+    for (var i = 0;i < paths.length; ++i) {
+      window.__additionalData[paths[i]] = {
+        pending: true,
+        waiting: []
+      };
+    }
+  };
+  window.__additionalDataLoaded = function(path, data) {
+    if (path in window.__additionalData) {
+      notifyLoaded(window.__additionalData[path], data);
+    } else {
+      console.error('Unexpected additional data loaded "' + path + '"');
+    }
+  };
+  window.__additionalDataError = function(path, msg) {
+    if (path in window.__additionalData) {
+      notifyError(window.__additionalData[path], msg);
+    } else {
+      console.error('Unexpected additional data encountered an error "' + path + '": ' + msg);
+    }
+  };
+  
+})();
+</script><script type="text/javascript">
+
+/*
+ Copyright 2018 Google Inc. All Rights Reserved.
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
+
+(function(){function g(a,c){b||(b=a,f=c,h.forEach(function(a){removeEventListener(a,l,e)}),m())}function m(){b&&f&&0<d.length&&(d.forEach(function(a){a(b,f)}),d=[])}function n(a,c){function k(){g(a,c);d()}function b(){d()}function d(){removeEventListener("pointerup",k,e);removeEventListener("pointercancel",b,e)}addEventListener("pointerup",k,e);addEventListener("pointercancel",b,e)}function l(a){if(a.cancelable){var c=performance.now(),b=a.timeStamp;b>c&&(c=+new Date);c-=b;"pointerdown"==a.type?n(c,
+a):g(c,a)}}var e={passive:!0,capture:!0},h=["click","mousedown","keydown","touchstart","pointerdown"],b,f,d=[];h.forEach(function(a){addEventListener(a,l,e)});window.perfMetrics=window.perfMetrics||{};window.perfMetrics.onFirstInputDelay=function(a){d.push(a);m()}})();
+</script>
+                
+                    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/ico/apple-touch-icon-76x76-precomposed.png/666282be8229.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/ico/apple-touch-icon-120x120-precomposed.png/8a5bd3f267b1.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/ico/apple-touch-icon-152x152-precomposed.png/68193576ffc5.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/static/images/ico/apple-touch-icon-167x167-precomposed.png/4985e31c9100.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/static/images/ico/apple-touch-icon-180x180-precomposed.png/c06fdb2357bd.png">
+                
+                
+                    
+                        <link rel="icon" sizes="192x192" href="/static/images/ico/favicon-192.png/68d99ba29cc8.png">
+                    
+                
+            
+            
+                    
+                        <link rel="shortcut icon" type="image/x-icon" href="/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+                    
+                
+            
+            
+    
+        <style type="text/css">/* @generated 
+ * DO NOT CHANGE THIS FILE. Instead, modify the non-build version of "main.css"
+ * then run "yolo css"
+ */
+body{-webkit-font-smoothing:antialiased;background-color:#fafafa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}.client-root{font-size:14px}a{text-decoration:none}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__,.-cx-PRIVATE-Page__root__{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.-cx-PRIVATE-Page__root__{height:100vh}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.-cx-PRIVATE-Page__main__{margin-top:137px;position:relative}@media screen and (max-width:990px){.-cx-PRIVATE-Page__main__{display:block;margin-top:0}}.-cx-PRIVATE-NavBar__root__{background-color:#fff;border-bottom:1px solid #efefef;height:77px;position:fixed;top:0;width:100%;z-index:100}.-cx-PRIVATE-NavBar__profilePic__{display:none}.-cx-PRIVATE-NavBar__username__{color:#00376b;display:inline!important;float:right;font-weight:400;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signIn__{display:inline-block;float:right;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signInText__{color:#00376b;font-weight:400}.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup.png/3a62b1a95da3.png);background-size:100%;height:35px;left:16px;position:absolute;text-indent:-9999em;top:6px;width:176px}.-cx-PRIVATE-NavBar__logo__ a{display:block;height:100%;width:100%}@media screen and (-webkit-min-device-pixel-ratio:1.5),screen and (min-resolution:1.5dppx){.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup@2x.png/43608c988939.png)}}.-cx-PRIVATE-NavBar__logoGroup__{left:16px;position:absolute;top:6px}.-cx-PRIVATE-NavBar__logoGroup__ .-cx-PRIVATE-NavBar__logo__{position:static}.-cx-PRIVATE-NavBar__wrapper__{margin:0 auto;max-width:1026px;padding:0 16px;position:relative}.-cx-PRIVATE-NavBar__topBarActions__,.-cx-PRIVATE-SidebarLayout__content__ li{list-style:none}.-cx-PRIVATE-NavBar__dropdown__,.-cx-PRIVATE-NavBar__topBarLeft__,.-cx-PRIVATE-SidebarLayout__content__ .separator,.-cx-PRIVATE-SidebarLayout__content__ .subtitle{display:none}.-cx-PRIVATE-SidebarLayout__content__{border-right:1px solid #efefef;height:100%;width:220px}.-cx-PRIVATE-SidebarLayout__content__ ul{margin:0;padding:0}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__content__{margin:0 px;border:0;width:100%}.-cx-PRIVATE-SidebarLayout__content__ ul{display:none}}.-cx-PRIVATE-SidebarLayout__root__{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;pointer-events:none;position:absolute;width:100%;z-index:1}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__root__{height:auto;padding-bottom:0;padding-top:78px;position:static}}.-cx-PRIVATE-SidebarLayout__contentWrapper__,.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;margin:0 auto;position:relative;width:992px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__navWrapper__{height:100%}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:auto;min-height:0;padding:0;width:100%}}.-cx-PRIVATE-SidebarLayout__nav__{float:left;height:100%;padding-right:0;pointer-events:initial;width:256px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__nav__{float:none;display:block;margin:0!important;background:0 0;border:0;width:100%}}.-cx-PRIVATE-SidebarLayout__contentWrapper__{background-color:#fff;border:1px solid #efefef;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 16px 20px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{border:1px solid #efefef;border-radius:3px}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.-cx-PRIVATE-SidebarLayout__pageContent__ .-cx-PRIVATE-SidebarLayout__contentWrapper__{padding:0 10px}}.-cx-PRIVATE-SidebarLayout__pageContent__{color:#262626;margin-left:205px;padding:30px 50px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__pageContent__{margin-left:0;margin-right:0;padding:20px 0}}.-cx-PRIVATE-SidebarLayout__pageContent__>:first-child{margin-top:0}.-cx-PRIVATE-SidebarLayout__pageContent__ a{color:#00376b}.-cx-PRIVATE-SidebarLayout__pageContent__ h1{font-size:32px;font-weight:400;margin-bottom:20px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h2{font-size:24px;font-weight:400;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h3{font-weight:600;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ li{padding-left:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ li:not(:first-child){margin-top:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ pre{white-space:pre-wrap}.-cx-PRIVATE-Navigation__header__{color:#8e8e8e;font-size:16px;font-weight:initial;margin:0;padding:16px;text-transform:uppercase}@media screen and (max-width:990px){.-cx-PRIVATE-Navigation__header__:first-child{display:block}.-cx-PRIVATE-Navigation__header__:not(:first-child){display:none}.-cx-PRIVATE-Navigation__header__ i{float:left;width:22px;height:18px;margin-right:8px;margin-left:10px;background:url(/static/images/glyphs/disclosure-down@2x.png/9ae8409fbb3a.png) no-repeat center;background-size:14px 14px}.-cx-PRIVATE-SidebarLayout__content__.active .-cx-PRIVATE-Navigation__header__ i{-webkit-transform:rotate(180deg);transform:rotate(180deg)}}.-cx-PRIVATE-Navigation__navLink__,.-cx-PRIVATE-Navigation__navLink__:active,.-cx-PRIVATE-Navigation__navLink__:hover,.-cx-PRIVATE-Navigation__navLink__:visited{border-left:2px solid transparent;-webkit-box-sizing:border-box;box-sizing:border-box;color:#262626;font-size:16px;display:block;padding:16px 16px 16px 30px;width:100%}.-cx-PRIVATE-Navigation__navLink__:hover{border-left-color:#dbdbdb}.-cx-PRIVATE-Navigation__active__ .-cx-PRIVATE-Navigation__navLink__{border-left-color:#262626;font-weight:600}.-cx-PRIVATE-Footer__root__{font-size:12px;height:77px}.-cx-PRIVATE-Footer__copyright__{color:#262626;display:inline-block;float:right;font-weight:600;margin-top:20px;text-transform:uppercase}.-cx-PRIVATE-Footer__nav__{display:inline-block}@media screen and (max-width:990px){.-cx-PRIVATE-Footer__copyright__{text-align:center;width:100%}}.-cx-PRIVATE-Footer__navItems__{margin:20px 0;padding:0;text-align:center}.-cx-PRIVATE-Footer__navItems__ li{display:inline-block;list-style:none}.-cx-PRIVATE-Footer__navItems__ li:not(:first-child){margin-left:15px}.-cx-PRIVATE-Footer__navItems__ a,.-cx-PRIVATE-Footer__navItems__ a:active,.-cx-PRIVATE-Footer__navItems__ a:focus,.-cx-PRIVATE-Footer__navItems__ a:hover,.-cx-PRIVATE-Footer__navItems__ a:visited{color:#00376b;font-weight:600;text-transform:uppercase}.-cx-PRIVATE-Footer__wrapper__{margin-left:auto;margin-right:auto;max-width:1026px;padding:0 20px}.-cx-PRIVATE-ErrorPage__errorContainer__{text-align:center}@media (max-width:990px){.-cx-PRIVATE-ErrorPage__errorContainer__{padding:100px 40px 0}}.-cx-PRIVATE-ErrorPage__errorContainer__ a,.-cx-PRIVATE-ErrorPage__errorContainer__ a:visited{color:#00376b}.-cx-PRIVATE-Linkshim__followLink__{background-color:#fff;color:#0095f6;border:1px solid #0095f6;border-radius:3px;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center;padding:8px;font:inherit;font-weight:700;width:90%}@media (min-width:736px){.-cx-PRIVATE-Linkshim__followLink__{width:10%}}.-cx-PRIVATE-Linkshim__followLink__:active{opacity:.5}.-cx-PRIVATE-Linkshim__followLink__:focus{color:#0074cc;border:1px solid #0074cc}@media (min-width:736px){.-cx-PRIVATE-Linkshim__goBack__{width:6%}}.-cx-PRIVATE-Linkshim__goBack__:active{opacity:.5}.-cx-PRIVATE-Linkshim__goBack__:focus{border:1px solid #0074cc}.-cx-PRIVATE-GatedContentPage__userAvatarContainer__{height:70px;text-align:center}.-cx-PRIVATE-GatedContentPage__userAvatar__{border-radius:50%;height:100%;width:auto}</style>
+    
+
+            
+    <script type="text/javascript" src="/static/scripts/jquery.js/a4e77326039e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/scripts/bluebar.js/203583927eba.js" crossorigin="anonymous"></script>
+</head>
+    <body class=" p-error dialog-404" style="">
+        
+            <div class="root -cx-PRIVATE-Page__root -cx-PRIVATE-Page__root__">
+                
+                    <div class="page -cx-PRIVATE-Page__body -cx-PRIVATE-Page__body__">
+                        
+                            
+                                <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root -cx-PRIVATE-NavBar__root__">
+    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper -cx-PRIVATE-NavBar__wrapper__">
+        <div class="logo -cx-PRIVATE-NavBar__logo -cx-PRIVATE-NavBar__logo__"><a href="/">Instagram</a></div>
+
+        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft -cx-PRIVATE-NavBar__topBarLeft__">
+            <ul class="top-bar-actions">
+                <li>
+                    <a class="top-bar-home" href="/" label=Home><i></i></a>
+                </li>
+            </ul>
+        </div>
+
+        
+            <div class="top-bar-right account-state" id="top_bar_right">
+                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions -cx-PRIVATE-NavBar__topBarActions__">
+                    
+                    
+                      
+                      <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn -cx-PRIVATE-NavBar__signIn__">
+                          <a href="/accounts/login/" class="loginLink">
+                              <i></i>
+                              <strong class="-cx-PRIVATE-NavBar__signInText -cx-PRIVATE-NavBar__signInText__">Log in</strong>
+                          </a>
+                      </li>
+                      
+                    
+                </ul>
+            </div>
+        
+    </div>
+</header> <!-- .top-bar -->
+                            
+                        
+
+                        
+                        <div class="main -cx-PRIVATE-Page__main -cx-PRIVATE-Page__main__">
+                            
+    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer -cx-PRIVATE-ErrorPage__errorContainer__">
+    
+
+    <h2>Sorry, this page isn&#39;t available.</h2>
+
+    <p>
+        The link you followed may be broken, or the page may have been removed.
+        <a href="/">Go back to Instagram.</a>
+    </p>
+
+
+
+    </div>
+
+                        </div> <!-- .main -->
+                        
+
+                    </div> <!-- .page -->
+
+                    
+                    <footer class="page-footer -cx-PRIVATE-Footer__root -cx-PRIVATE-Footer__root__" role="contentinfo">
+                        <div class="wrapper -cx-PRIVATE-Footer__wrapper -cx-PRIVATE-Footer__wrapper__">
+                            <nav class="-cx-PRIVATE-Footer__nav -cx-PRIVATE-Footer__nav__">
+                                <ul class="-cx-PRIVATE-Footer__navItems -cx-PRIVATE-Footer__navItems__">
+                                    <li><a href="/about/us/">About us</a></li>
+                                    <li><a href="https://help.instagram.com/">Support</a></li>
+                                    <li><a href="https://about.instagram.com/blog/">Press</a></li>
+                                    <li><a href="">API</a></li>
+                                    <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+                                    <li><a href="/legal/privacy/">Privacy</a></li>
+                                    <li><a href="/legal/terms/">
+                                      
+                                          Terms
+                                      
+                                    </a></li>
+                                    
+                                </ul>
+                            </nav>
+
+                            <p class="copyright -cx-PRIVATE-Footer__copyright -cx-PRIVATE-Footer__copyright__">&copy; 2024 Instagram</p>
+                        </div>
+                    </footer>
+                    
+                
+                <div id="reactModalMountPoint"></div>
+            </div> <!-- .root -->
+        
+        
+
+
+        
+            
+
+            
+        
+
+        <script type="text/javascript">
+(function(){
+  function normalizeError(err) {
+    var errorInfo = err.error || {};
+    var getConfigProp = function(propName, defaultValueIfNotTruthy) {
+      var propValue = window._sharedData && window._sharedData[propName];
+      return propValue ? propValue : defaultValueIfNotTruthy;
+    };
+    var windowUrl = window.location.href;
+    var errUrl = err.url || windowUrl;
+    return {
+      line: err.line || errorInfo.message || 0,
+      column: err.column || 0,
+      name: 'InitError',
+      message: err.message || errorInfo.message || '',
+      script: errorInfo.script || '',
+      stack: errorInfo.stackTrace || errorInfo.stack || '',
+      timestamp: Date.now(),
+      ref: windowUrl.indexOf('direct') >= 0 ? 'direct' : windowUrl,
+      deployment_stage: getConfigProp('deployment_stage', ''),
+      frontend_env: getConfigProp('frontend_env', 'prod'),
+      rollout_hash: getConfigProp('rollout_hash', ''),
+      is_prerelease: window.__PRERELEASE__ || false,
+      bundle_variant: getConfigProp('bundle_variant', null),
+      request_url: errUrl.indexOf('direct') >= 0 ? 'direct' : errUrl,
+      response_status_code: errorInfo.statusCode || 0
+    }
+  }
+  window.addEventListener('load', function(){
+    if (window.__bufferedErrors && window.__bufferedErrors.length) {
+      if (window.caches && window.caches.keys && window.caches.delete) {
+        window.caches.keys().then(function(keys) {
+          keys.forEach(function(key) {
+            window.caches.delete(key)
+          })
+        })
+      }
+      window.__bufferedErrors.map(function(error) {
+        return normalizeError(error)
+      }).forEach(function(normalizedError) {
+        var request = new XMLHttpRequest();
+        request.open('POST', '/client_error/', true);
+        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        request.send(JSON.stringify(normalizedError));
+      })
+    }
+  })
+}());
+</script>
+    </body>
+</html>
+
+2024-07-02 13:27:07,527 - instabot version: 0.117.0 (api) - ERROR - Error unknown send request
+2024-07-02 13:27:08,580 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: creatives/ar_class/ returned response: <Response [200]>
+2024-07-02 13:27:09,936 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2024-07-02 13:27:12,428 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2024-07-02 13:27:13,284 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/blocked/ returned response: <Response [200]>
+2024-07-02 13:27:14,795 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/ returned response: <Response [200]>
+2024-07-02 13:27:15,578 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: loom/fetch_config/ returned response: <Response [200]>
+2024-07-02 13:27:17,871 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: scores/bootstrap/users/?surfaces=["autocomplete_user_list","coefficient_besties_list_ranking","coefficient_rank_recipient_user_suggestion","coefficient_ios_section_test_bootstrap_ranking","coefficient_direct_recipients_ranking_variant_2"] returned response: <Response [200]>
+2024-07-02 13:27:18,593 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/eligibility/get_monetization_products_eligibility_data/?product_types=branded_content returned response: <Response [200]>
+2024-07-02 13:27:19,301 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/branded_content/should_require_professional_account/ returned response: <Response [200]>
+2024-07-02 13:27:20,051 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: linked_accounts/get_linkage_status/ returned response: <Response [200]>
+2024-07-02 13:27:20,890 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: locations/request_country/ returned response: <Response [404]>
+2024-07-02 13:27:20,890 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'<!DOCTYPE html>\n<html lang="None" class="no-js not-logged-in ">\n    <head>\n        <meta charset="utf-8">\n        <meta http-equiv="X-UA-Compatible" content="IE=edge">\n\n        <title>\n                  Page Not Found &bull; Instagram\n                </title>\n\n        \n        <meta name="robots" content="noimageindex, noarchive">\n        <meta name="apple-mobile-web-app-status-bar-style" content="default">\n        <meta name="mobile-web-app-capable" content="yes">\n        <meta name="theme-color" content="#ffffff">\n        \n        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">\n        <link rel="manifest" href="/data/manifest.json">\n\n        \n        \n        \n\n        <script type="text/javascript">\n        (function() {\n  var docElement = document.documentElement;\n  var classRE = new RegExp(\'(^|\\\\s)no-js(\\\\s|$)\');\n  var className = docElement.className;\n  docElement.className = className.replace(classRE, \'$1js$2\');\n})();\n</script>\n        <script type="text/javascript">\n(function() {\n  if (\'PerformanceObserver\' in window && \'PerformancePaintTiming\' in window) {\n    window.__bufferedPerformance = [];\n    var ob = new PerformanceObserver(function(e) {\n      window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());\n    });\n    ob.observe({entryTypes:[\'paint\']});\n  }\n\n  window.__bufferedErrors = [];\n  window.onerror = function(message, url, line, column, error) {\n    window.__bufferedErrors.push({\n      message: message,\n      url: url,\n      line: line,\n      column: column,\n      error: error\n    });\n    return false;\n  };\n  window.__initialData = {\n    pending: true,\n    waiting: []\n  };\n  function asyncFetchSharedData(extra) {\n    var sharedDataReq = new XMLHttpRequest();\n    sharedDataReq.onreadystatechange = function() {\n          if (sharedDataReq.readyState === 4) {\n            if(sharedDataReq.status === 200){\n              var sharedData = JSON.parse(sharedDataReq.responseText);\n              window.__initialDataLoaded(sharedData, extra);\n            }\n          }\n        }\n    sharedDataReq.open(\'GET\', \'/data/shared_data/\', true);\n    sharedDataReq.send(null);\n  }\n  function notifyLoaded(item, data) {\n    item.pending = false;\n    item.data = data;\n    for (var i = 0;i < item.waiting.length; ++i) {\n      item.waiting[i].resolve(item.data);\n    }\n    item.waiting = [];\n  }\n  function notifyError(item, msg) {\n    item.pending = false;\n    item.error = new Error(msg);\n    for (var i = 0;i < item.waiting.length; ++i) {\n      item.waiting[i].reject(item.error);\n    }\n    item.waiting = [];\n  }\n  window.__initialDataLoaded = function(initialData, extraData) {\n    if (extraData) {\n      for (var key in extraData) {\n        initialData[key] = extraData[key];\n      }\n    }\n    notifyLoaded(window.__initialData, initialData);\n  };\n  window.__initialDataError = function(msg) {\n    notifyError(window.__initialData, msg);\n  };\n  window.__additionalData = {};\n  window.__pendingAdditionalData = function(paths) {\n    for (var i = 0;i < paths.length; ++i) {\n      window.__additionalData[paths[i]] = {\n        pending: true,\n        waiting: []\n      };\n    }\n  };\n  window.__additionalDataLoaded = function(path, data) {\n    if (path in window.__additionalData) {\n      notifyLoaded(window.__additionalData[path], data);\n    } else {\n      console.error(\'Unexpected additional data loaded "\' + path + \'"\');\n    }\n  };\n  window.__additionalDataError = function(path, msg) {\n    if (path in window.__additionalData) {\n      notifyError(window.__additionalData[path], msg);\n    } else {\n      console.error(\'Unexpected additional data encountered an error "\' + path + \'": \' + msg);\n    }\n  };\n  \n})();\n</script><script type="text/javascript">\n\n/*\n Copyright 2018 Google Inc. All Rights Reserved.\n Licensed under the Apache License, Version 2.0 (the "License");\n you may not use this file except in compliance with the License.\n You may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\n Unless required by applicable law or agreed to in writing, software\n distributed under the License is distributed on an "AS IS" BASIS,\n WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n See the License for the specific language governing permissions and\n limitations under the License.\n*/\n\n(function(){function g(a,c){b||(b=a,f=c,h.forEach(function(a){removeEventListener(a,l,e)}),m())}function m(){b&&f&&0<d.length&&(d.forEach(function(a){a(b,f)}),d=[])}function n(a,c){function k(){g(a,c);d()}function b(){d()}function d(){removeEventListener("pointerup",k,e);removeEventListener("pointercancel",b,e)}addEventListener("pointerup",k,e);addEventListener("pointercancel",b,e)}function l(a){if(a.cancelable){var c=performance.now(),b=a.timeStamp;b>c&&(c=+new Date);c-=b;"pointerdown"==a.type?n(c,\na):g(c,a)}}var e={passive:!0,capture:!0},h=["click","mousedown","keydown","touchstart","pointerdown"],b,f,d=[];h.forEach(function(a){addEventListener(a,l,e)});window.perfMetrics=window.perfMetrics||{};window.perfMetrics.onFirstInputDelay=function(a){d.push(a);m()}})();\n</script>\n                \n                    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/ico/apple-touch-icon-76x76-precomposed.png/666282be8229.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/ico/apple-touch-icon-120x120-precomposed.png/8a5bd3f267b1.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/ico/apple-touch-icon-152x152-precomposed.png/68193576ffc5.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/static/images/ico/apple-touch-icon-167x167-precomposed.png/4985e31c9100.png">\n                    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/static/images/ico/apple-touch-icon-180x180-precomposed.png/c06fdb2357bd.png">\n                \n                \n                    \n                        <link rel="icon" sizes="192x192" href="/static/images/ico/favicon-192.png/68d99ba29cc8.png">\n                    \n                \n            \n            \n                    \n                        <link rel="shortcut icon" type="image/x-icon" href="/static/images/ico/favicon.ico/36b3ee2d91ed.ico">\n                    \n                \n            \n            \n    \n        <style type="text/css">/* @generated \n * DO NOT CHANGE THIS FILE. Instead, modify the non-build version of "main.css"\n * then run "yolo css"\n */\nbody{-webkit-font-smoothing:antialiased;background-color:#fafafa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}.client-root{font-size:14px}a{text-decoration:none}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__,.-cx-PRIVATE-Page__root__{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.-cx-PRIVATE-Page__root__{height:100vh}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.-cx-PRIVATE-Page__main__{margin-top:137px;position:relative}@media screen and (max-width:990px){.-cx-PRIVATE-Page__main__{display:block;margin-top:0}}.-cx-PRIVATE-NavBar__root__{background-color:#fff;border-bottom:1px solid #efefef;height:77px;position:fixed;top:0;width:100%;z-index:100}.-cx-PRIVATE-NavBar__profilePic__{display:none}.-cx-PRIVATE-NavBar__username__{color:#00376b;display:inline!important;float:right;font-weight:400;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signIn__{display:inline-block;float:right;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signInText__{color:#00376b;font-weight:400}.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup.png/3a62b1a95da3.png);background-size:100%;height:35px;left:16px;position:absolute;text-indent:-9999em;top:6px;width:176px}.-cx-PRIVATE-NavBar__logo__ a{display:block;height:100%;width:100%}@media screen and (-webkit-min-device-pixel-ratio:1.5),screen and (min-resolution:1.5dppx){.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup@2x.png/43608c988939.png)}}.-cx-PRIVATE-NavBar__logoGroup__{left:16px;position:absolute;top:6px}.-cx-PRIVATE-NavBar__logoGroup__ .-cx-PRIVATE-NavBar__logo__{position:static}.-cx-PRIVATE-NavBar__wrapper__{margin:0 auto;max-width:1026px;padding:0 16px;position:relative}.-cx-PRIVATE-NavBar__topBarActions__,.-cx-PRIVATE-SidebarLayout__content__ li{list-style:none}.-cx-PRIVATE-NavBar__dropdown__,.-cx-PRIVATE-NavBar__topBarLeft__,.-cx-PRIVATE-SidebarLayout__content__ .separator,.-cx-PRIVATE-SidebarLayout__content__ .subtitle{display:none}.-cx-PRIVATE-SidebarLayout__content__{border-right:1px solid #efefef;height:100%;width:220px}.-cx-PRIVATE-SidebarLayout__content__ ul{margin:0;padding:0}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__content__{margin:0 px;border:0;width:100%}.-cx-PRIVATE-SidebarLayout__content__ ul{display:none}}.-cx-PRIVATE-SidebarLayout__root__{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;pointer-events:none;position:absolute;width:100%;z-index:1}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__root__{height:auto;padding-bottom:0;padding-top:78px;position:static}}.-cx-PRIVATE-SidebarLayout__contentWrapper__,.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;margin:0 auto;position:relative;width:992px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__navWrapper__{height:100%}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:auto;min-height:0;padding:0;width:100%}}.-cx-PRIVATE-SidebarLayout__nav__{float:left;height:100%;padding-right:0;pointer-events:initial;width:256px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__nav__{float:none;display:block;margin:0!important;background:0 0;border:0;width:100%}}.-cx-PRIVATE-SidebarLayout__contentWrapper__{background-color:#fff;border:1px solid #efefef;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 16px 20px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{border:1px solid #efefef;border-radius:3px}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.-cx-PRIVATE-SidebarLayout__pageContent__ .-cx-PRIVATE-SidebarLayout__contentWrapper__{padding:0 10px}}.-cx-PRIVATE-SidebarLayout__pageContent__{color:#262626;margin-left:205px;padding:30px 50px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__pageContent__{margin-left:0;margin-right:0;padding:20px 0}}.-cx-PRIVATE-SidebarLayout__pageContent__>:first-child{margin-top:0}.-cx-PRIVATE-SidebarLayout__pageContent__ a{color:#00376b}.-cx-PRIVATE-SidebarLayout__pageContent__ h1{font-size:32px;font-weight:400;margin-bottom:20px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h2{font-size:24px;font-weight:400;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h3{font-weight:600;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ li{padding-left:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ li:not(:first-child){margin-top:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ pre{white-space:pre-wrap}.-cx-PRIVATE-Navigation__header__{color:#8e8e8e;font-size:16px;font-weight:initial;margin:0;padding:16px;text-transform:uppercase}@media screen and (max-width:990px){.-cx-PRIVATE-Navigation__header__:first-child{display:block}.-cx-PRIVATE-Navigation__header__:not(:first-child){display:none}.-cx-PRIVATE-Navigation__header__ i{float:left;width:22px;height:18px;margin-right:8px;margin-left:10px;background:url(/static/images/glyphs/disclosure-down@2x.png/9ae8409fbb3a.png) no-repeat center;background-size:14px 14px}.-cx-PRIVATE-SidebarLayout__content__.active .-cx-PRIVATE-Navigation__header__ i{-webkit-transform:rotate(180deg);transform:rotate(180deg)}}.-cx-PRIVATE-Navigation__navLink__,.-cx-PRIVATE-Navigation__navLink__:active,.-cx-PRIVATE-Navigation__navLink__:hover,.-cx-PRIVATE-Navigation__navLink__:visited{border-left:2px solid transparent;-webkit-box-sizing:border-box;box-sizing:border-box;color:#262626;font-size:16px;display:block;padding:16px 16px 16px 30px;width:100%}.-cx-PRIVATE-Navigation__navLink__:hover{border-left-color:#dbdbdb}.-cx-PRIVATE-Navigation__active__ .-cx-PRIVATE-Navigation__navLink__{border-left-color:#262626;font-weight:600}.-cx-PRIVATE-Footer__root__{font-size:12px;height:77px}.-cx-PRIVATE-Footer__copyright__{color:#262626;display:inline-block;float:right;font-weight:600;margin-top:20px;text-transform:uppercase}.-cx-PRIVATE-Footer__nav__{display:inline-block}@media screen and (max-width:990px){.-cx-PRIVATE-Footer__copyright__{text-align:center;width:100%}}.-cx-PRIVATE-Footer__navItems__{margin:20px 0;padding:0;text-align:center}.-cx-PRIVATE-Footer__navItems__ li{display:inline-block;list-style:none}.-cx-PRIVATE-Footer__navItems__ li:not(:first-child){margin-left:15px}.-cx-PRIVATE-Footer__navItems__ a,.-cx-PRIVATE-Footer__navItems__ a:active,.-cx-PRIVATE-Footer__navItems__ a:focus,.-cx-PRIVATE-Footer__navItems__ a:hover,.-cx-PRIVATE-Footer__navItems__ a:visited{color:#00376b;font-weight:600;text-transform:uppercase}.-cx-PRIVATE-Footer__wrapper__{margin-left:auto;margin-right:auto;max-width:1026px;padding:0 20px}.-cx-PRIVATE-ErrorPage__errorContainer__{text-align:center}@media (max-width:990px){.-cx-PRIVATE-ErrorPage__errorContainer__{padding:100px 40px 0}}.-cx-PRIVATE-ErrorPage__errorContainer__ a,.-cx-PRIVATE-ErrorPage__errorContainer__ a:visited{color:#00376b}.-cx-PRIVATE-Linkshim__followLink__{background-color:#fff;color:#0095f6;border:1px solid #0095f6;border-radius:3px;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center;padding:8px;font:inherit;font-weight:700;width:90%}@media (min-width:736px){.-cx-PRIVATE-Linkshim__followLink__{width:10%}}.-cx-PRIVATE-Linkshim__followLink__:active{opacity:.5}.-cx-PRIVATE-Linkshim__followLink__:focus{color:#0074cc;border:1px solid #0074cc}@media (min-width:736px){.-cx-PRIVATE-Linkshim__goBack__{width:6%}}.-cx-PRIVATE-Linkshim__goBack__:active{opacity:.5}.-cx-PRIVATE-Linkshim__goBack__:focus{border:1px solid #0074cc}.-cx-PRIVATE-GatedContentPage__userAvatarContainer__{height:70px;text-align:center}.-cx-PRIVATE-GatedContentPage__userAvatar__{border-radius:50%;height:100%;width:auto}</style>\n    \n\n            \n    <script type="text/javascript" src="/static/scripts/jquery.js/a4e77326039e.js" crossorigin="anonymous"></script>\n    <script type="text/javascript" src="/static/scripts/bluebar.js/203583927eba.js" crossorigin="anonymous"></script>\n</head>\n    <body class=" p-error dialog-404" style="">\n        \n            <div class="root -cx-PRIVATE-Page__root -cx-PRIVATE-Page__root__">\n                \n                    <div class="page -cx-PRIVATE-Page__body -cx-PRIVATE-Page__body__">\n                        \n                            \n                                <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root -cx-PRIVATE-NavBar__root__">\n    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper -cx-PRIVATE-NavBar__wrapper__">\n        <div class="logo -cx-PRIVATE-NavBar__logo -cx-PRIVATE-NavBar__logo__"><a href="/">Instagram</a></div>\n\n        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft -cx-PRIVATE-NavBar__topBarLeft__">\n            <ul class="top-bar-actions">\n                <li>\n                    <a class="top-bar-home" href="/" label=Home><i></i></a>\n                </li>\n            </ul>\n        </div>\n\n        \n            <div class="top-bar-right account-state" id="top_bar_right">\n                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions -cx-PRIVATE-NavBar__topBarActions__">\n                    \n                    \n                      \n                      <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn -cx-PRIVATE-NavBar__signIn__">\n                          <a href="/accounts/login/" class="loginLink">\n                              <i></i>\n                              <strong class="-cx-PRIVATE-NavBar__signInText -cx-PRIVATE-NavBar__signInText__">Log in</strong>\n                          </a>\n                      </li>\n                      \n                    \n                </ul>\n            </div>\n        \n    </div>\n</header> <!-- .top-bar -->\n                            \n                        \n\n                        \n                        <div class="main -cx-PRIVATE-Page__main -cx-PRIVATE-Page__main__">\n                            \n    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer -cx-PRIVATE-ErrorPage__errorContainer__">\n    \n\n    <h2>Sorry, this page isn&#39;t available.</h2>\n\n    <p>\n        The link you followed may be broken, or the page may have been removed.\n        <a href="/">Go back to Instagram.</a>\n    </p>\n\n\n\n    </div>\n\n                        </div> <!-- .main -->\n                        \n\n                    </div> <!-- .page -->\n\n                    \n                    <footer class="page-footer -cx-PRIVATE-Footer__root -cx-PRIVATE-Footer__root__" role="contentinfo">\n                        <div class="wrapper -cx-PRIVATE-Footer__wrapper -cx-PRIVATE-Footer__wrapper__">\n                            <nav class="-cx-PRIVATE-Footer__nav -cx-PRIVATE-Footer__nav__">\n                                <ul class="-cx-PRIVATE-Footer__navItems -cx-PRIVATE-Footer__navItems__">\n                                    <li><a href="/about/us/">About us</a></li>\n                                    <li><a href="https://help.instagram.com/">Support</a></li>\n                                    <li><a href="https://about.instagram.com/blog/">Press</a></li>\n                                    <li><a href="">API</a></li>\n                                    <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>\n                                    <li><a href="/legal/privacy/">Privacy</a></li>\n                                    <li><a href="/legal/terms/">\n                                      \n                                          Terms\n                                      \n                                    </a></li>\n                                    \n                                </ul>\n                            </nav>\n\n                            <p class="copyright -cx-PRIVATE-Footer__copyright -cx-PRIVATE-Footer__copyright__">&copy; 2024 Instagram</p>\n                        </div>\n                    </footer>\n                    \n                \n                <div id="reactModalMountPoint"></div>\n            </div> <!-- .root -->\n        \n        \n\n\n        \n            \n\n            \n        \n\n        <script type="text/javascript">\n(function(){\n  function normalizeError(err) {\n    var errorInfo = err.error || {};\n    var getConfigProp = function(propName, defaultValueIfNotTruthy) {\n      var propValue = window._sharedData && window._sharedData[propName];\n      return propValue ? propValue : defaultValueIfNotTruthy;\n    };\n    var windowUrl = window.location.href;\n    var errUrl = err.url || windowUrl;\n    return {\n      line: err.line || errorInfo.message || 0,\n      column: err.column || 0,\n      name: \'InitError\',\n      message: err.message || errorInfo.message || \'\',\n      script: errorInfo.script || \'\',\n      stack: errorInfo.stackTrace || errorInfo.stack || \'\',\n      timestamp: Date.now(),\n      ref: windowUrl.indexOf(\'direct\') >= 0 ? \'direct\' : windowUrl,\n      deployment_stage: getConfigProp(\'deployment_stage\', \'\'),\n      frontend_env: getConfigProp(\'frontend_env\', \'prod\'),\n      rollout_hash: getConfigProp(\'rollout_hash\', \'\'),\n      is_prerelease: window.__PRERELEASE__ || false,\n      bundle_variant: getConfigProp(\'bundle_variant\', null),\n      request_url: errUrl.indexOf(\'direct\') >= 0 ? \'direct\' : errUrl,\n      response_status_code: errorInfo.statusCode || 0\n    }\n  }\n  window.addEventListener(\'load\', function(){\n    if (window.__bufferedErrors && window.__bufferedErrors.length) {\n      if (window.caches && window.caches.keys && window.caches.delete) {\n        window.caches.keys().then(function(keys) {\n          keys.forEach(function(key) {\n            window.caches.delete(key)\n          })\n        })\n      }\n      window.__bufferedErrors.map(function(error) {\n        return normalizeError(error)\n      }).forEach(function(normalizedError) {\n        var request = new XMLHttpRequest();\n        request.open(\'POST\', \'/client_error/\', true);\n        request.setRequestHeader(\'Content-Type\', \'application/json; charset=utf-8\');\n        request.send(JSON.stringify(normalizedError));\n      })\n    }\n  })\n}());\n</script>\n    </body>\n</html>\n'
+2024-07-02 13:27:20,890 - instabot version: 0.117.0 (api) - ERROR - Error checking for `feedback_required`, response text is not JSON
+2024-07-02 13:27:20,891 - instabot version: 0.117.0 (api) - INFO - Full Response: <Response [404]>
+2024-07-02 13:27:20,891 - instabot version: 0.117.0 (api) - INFO - Response Text: <!DOCTYPE html>
+<html lang="None" class="no-js not-logged-in ">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+                  Page Not Found &bull; Instagram
+                </title>
+
+        
+        <meta name="robots" content="noimageindex, noarchive">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#ffffff">
+        
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+        <link rel="manifest" href="/data/manifest.json">
+
+        
+        
+        
+
+        <script type="text/javascript">
+        (function() {
+  var docElement = document.documentElement;
+  var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+  var className = docElement.className;
+  docElement.className = className.replace(classRE, '$1js$2');
+})();
+</script>
+        <script type="text/javascript">
+(function() {
+  if ('PerformanceObserver' in window && 'PerformancePaintTiming' in window) {
+    window.__bufferedPerformance = [];
+    var ob = new PerformanceObserver(function(e) {
+      window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());
+    });
+    ob.observe({entryTypes:['paint']});
+  }
+
+  window.__bufferedErrors = [];
+  window.onerror = function(message, url, line, column, error) {
+    window.__bufferedErrors.push({
+      message: message,
+      url: url,
+      line: line,
+      column: column,
+      error: error
+    });
+    return false;
+  };
+  window.__initialData = {
+    pending: true,
+    waiting: []
+  };
+  function asyncFetchSharedData(extra) {
+    var sharedDataReq = new XMLHttpRequest();
+    sharedDataReq.onreadystatechange = function() {
+          if (sharedDataReq.readyState === 4) {
+            if(sharedDataReq.status === 200){
+              var sharedData = JSON.parse(sharedDataReq.responseText);
+              window.__initialDataLoaded(sharedData, extra);
+            }
+          }
+        }
+    sharedDataReq.open('GET', '/data/shared_data/', true);
+    sharedDataReq.send(null);
+  }
+  function notifyLoaded(item, data) {
+    item.pending = false;
+    item.data = data;
+    for (var i = 0;i < item.waiting.length; ++i) {
+      item.waiting[i].resolve(item.data);
+    }
+    item.waiting = [];
+  }
+  function notifyError(item, msg) {
+    item.pending = false;
+    item.error = new Error(msg);
+    for (var i = 0;i < item.waiting.length; ++i) {
+      item.waiting[i].reject(item.error);
+    }
+    item.waiting = [];
+  }
+  window.__initialDataLoaded = function(initialData, extraData) {
+    if (extraData) {
+      for (var key in extraData) {
+        initialData[key] = extraData[key];
+      }
+    }
+    notifyLoaded(window.__initialData, initialData);
+  };
+  window.__initialDataError = function(msg) {
+    notifyError(window.__initialData, msg);
+  };
+  window.__additionalData = {};
+  window.__pendingAdditionalData = function(paths) {
+    for (var i = 0;i < paths.length; ++i) {
+      window.__additionalData[paths[i]] = {
+        pending: true,
+        waiting: []
+      };
+    }
+  };
+  window.__additionalDataLoaded = function(path, data) {
+    if (path in window.__additionalData) {
+      notifyLoaded(window.__additionalData[path], data);
+    } else {
+      console.error('Unexpected additional data loaded "' + path + '"');
+    }
+  };
+  window.__additionalDataError = function(path, msg) {
+    if (path in window.__additionalData) {
+      notifyError(window.__additionalData[path], msg);
+    } else {
+      console.error('Unexpected additional data encountered an error "' + path + '": ' + msg);
+    }
+  };
+  
+})();
+</script><script type="text/javascript">
+
+/*
+ Copyright 2018 Google Inc. All Rights Reserved.
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
+
+(function(){function g(a,c){b||(b=a,f=c,h.forEach(function(a){removeEventListener(a,l,e)}),m())}function m(){b&&f&&0<d.length&&(d.forEach(function(a){a(b,f)}),d=[])}function n(a,c){function k(){g(a,c);d()}function b(){d()}function d(){removeEventListener("pointerup",k,e);removeEventListener("pointercancel",b,e)}addEventListener("pointerup",k,e);addEventListener("pointercancel",b,e)}function l(a){if(a.cancelable){var c=performance.now(),b=a.timeStamp;b>c&&(c=+new Date);c-=b;"pointerdown"==a.type?n(c,
+a):g(c,a)}}var e={passive:!0,capture:!0},h=["click","mousedown","keydown","touchstart","pointerdown"],b,f,d=[];h.forEach(function(a){addEventListener(a,l,e)});window.perfMetrics=window.perfMetrics||{};window.perfMetrics.onFirstInputDelay=function(a){d.push(a);m()}})();
+</script>
+                
+                    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/ico/apple-touch-icon-76x76-precomposed.png/666282be8229.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/ico/apple-touch-icon-120x120-precomposed.png/8a5bd3f267b1.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/ico/apple-touch-icon-152x152-precomposed.png/68193576ffc5.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/static/images/ico/apple-touch-icon-167x167-precomposed.png/4985e31c9100.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/static/images/ico/apple-touch-icon-180x180-precomposed.png/c06fdb2357bd.png">
+                
+                
+                    
+                        <link rel="icon" sizes="192x192" href="/static/images/ico/favicon-192.png/68d99ba29cc8.png">
+                    
+                
+            
+            
+                    
+                        <link rel="shortcut icon" type="image/x-icon" href="/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+                    
+                
+            
+            
+    
+        <style type="text/css">/* @generated 
+ * DO NOT CHANGE THIS FILE. Instead, modify the non-build version of "main.css"
+ * then run "yolo css"
+ */
+body{-webkit-font-smoothing:antialiased;background-color:#fafafa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}.client-root{font-size:14px}a{text-decoration:none}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__,.-cx-PRIVATE-Page__root__{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.-cx-PRIVATE-Page__root__{height:100vh}.-cx-PRIVATE-Page__body__,.-cx-PRIVATE-Page__main__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.-cx-PRIVATE-Page__main__{margin-top:137px;position:relative}@media screen and (max-width:990px){.-cx-PRIVATE-Page__main__{display:block;margin-top:0}}.-cx-PRIVATE-NavBar__root__{background-color:#fff;border-bottom:1px solid #efefef;height:77px;position:fixed;top:0;width:100%;z-index:100}.-cx-PRIVATE-NavBar__profilePic__{display:none}.-cx-PRIVATE-NavBar__username__{color:#00376b;display:inline!important;float:right;font-weight:400;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signIn__{display:inline-block;float:right;margin-right:2px;margin-top:12px}.-cx-PRIVATE-NavBar__signInText__{color:#00376b;font-weight:400}.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup.png/3a62b1a95da3.png);background-size:100%;height:35px;left:16px;position:absolute;text-indent:-9999em;top:6px;width:176px}.-cx-PRIVATE-NavBar__logo__ a{display:block;height:100%;width:100%}@media screen and (-webkit-min-device-pixel-ratio:1.5),screen and (min-resolution:1.5dppx){.-cx-PRIVATE-NavBar__logo__{background-image:url(/static/images/branding/logoWhiteoutLockup@2x.png/43608c988939.png)}}.-cx-PRIVATE-NavBar__logoGroup__{left:16px;position:absolute;top:6px}.-cx-PRIVATE-NavBar__logoGroup__ .-cx-PRIVATE-NavBar__logo__{position:static}.-cx-PRIVATE-NavBar__wrapper__{margin:0 auto;max-width:1026px;padding:0 16px;position:relative}.-cx-PRIVATE-NavBar__topBarActions__,.-cx-PRIVATE-SidebarLayout__content__ li{list-style:none}.-cx-PRIVATE-NavBar__dropdown__,.-cx-PRIVATE-NavBar__topBarLeft__,.-cx-PRIVATE-SidebarLayout__content__ .separator,.-cx-PRIVATE-SidebarLayout__content__ .subtitle{display:none}.-cx-PRIVATE-SidebarLayout__content__{border-right:1px solid #efefef;height:100%;width:220px}.-cx-PRIVATE-SidebarLayout__content__ ul{margin:0;padding:0}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__content__{margin:0 px;border:0;width:100%}.-cx-PRIVATE-SidebarLayout__content__ ul{display:none}}.-cx-PRIVATE-SidebarLayout__root__{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;pointer-events:none;position:absolute;width:100%;z-index:1}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__root__{height:auto;padding-bottom:0;padding-top:78px;position:static}}.-cx-PRIVATE-SidebarLayout__contentWrapper__,.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;margin:0 auto;position:relative;width:992px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__navWrapper__{height:100%}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__navWrapper__{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:auto;min-height:0;padding:0;width:100%}}.-cx-PRIVATE-SidebarLayout__nav__{float:left;height:100%;padding-right:0;pointer-events:initial;width:256px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__nav__{float:none;display:block;margin:0!important;background:0 0;border:0;width:100%}}.-cx-PRIVATE-SidebarLayout__contentWrapper__{background-color:#fff;border:1px solid #efefef;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 16px 20px}@media screen and (min-width:991px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{border:1px solid #efefef;border-radius:3px}}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__contentWrapper__{width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.-cx-PRIVATE-SidebarLayout__pageContent__ .-cx-PRIVATE-SidebarLayout__contentWrapper__{padding:0 10px}}.-cx-PRIVATE-SidebarLayout__pageContent__{color:#262626;margin-left:205px;padding:30px 50px}@media screen and (max-width:990px){.-cx-PRIVATE-SidebarLayout__pageContent__{margin-left:0;margin-right:0;padding:20px 0}}.-cx-PRIVATE-SidebarLayout__pageContent__>:first-child{margin-top:0}.-cx-PRIVATE-SidebarLayout__pageContent__ a{color:#00376b}.-cx-PRIVATE-SidebarLayout__pageContent__ h1{font-size:32px;font-weight:400;margin-bottom:20px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h2{font-size:24px;font-weight:400;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ h3{font-weight:600;margin-bottom:12px;margin-top:28px}.-cx-PRIVATE-SidebarLayout__pageContent__ li{padding-left:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ li:not(:first-child){margin-top:8px}.-cx-PRIVATE-SidebarLayout__pageContent__ pre{white-space:pre-wrap}.-cx-PRIVATE-Navigation__header__{color:#8e8e8e;font-size:16px;font-weight:initial;margin:0;padding:16px;text-transform:uppercase}@media screen and (max-width:990px){.-cx-PRIVATE-Navigation__header__:first-child{display:block}.-cx-PRIVATE-Navigation__header__:not(:first-child){display:none}.-cx-PRIVATE-Navigation__header__ i{float:left;width:22px;height:18px;margin-right:8px;margin-left:10px;background:url(/static/images/glyphs/disclosure-down@2x.png/9ae8409fbb3a.png) no-repeat center;background-size:14px 14px}.-cx-PRIVATE-SidebarLayout__content__.active .-cx-PRIVATE-Navigation__header__ i{-webkit-transform:rotate(180deg);transform:rotate(180deg)}}.-cx-PRIVATE-Navigation__navLink__,.-cx-PRIVATE-Navigation__navLink__:active,.-cx-PRIVATE-Navigation__navLink__:hover,.-cx-PRIVATE-Navigation__navLink__:visited{border-left:2px solid transparent;-webkit-box-sizing:border-box;box-sizing:border-box;color:#262626;font-size:16px;display:block;padding:16px 16px 16px 30px;width:100%}.-cx-PRIVATE-Navigation__navLink__:hover{border-left-color:#dbdbdb}.-cx-PRIVATE-Navigation__active__ .-cx-PRIVATE-Navigation__navLink__{border-left-color:#262626;font-weight:600}.-cx-PRIVATE-Footer__root__{font-size:12px;height:77px}.-cx-PRIVATE-Footer__copyright__{color:#262626;display:inline-block;float:right;font-weight:600;margin-top:20px;text-transform:uppercase}.-cx-PRIVATE-Footer__nav__{display:inline-block}@media screen and (max-width:990px){.-cx-PRIVATE-Footer__copyright__{text-align:center;width:100%}}.-cx-PRIVATE-Footer__navItems__{margin:20px 0;padding:0;text-align:center}.-cx-PRIVATE-Footer__navItems__ li{display:inline-block;list-style:none}.-cx-PRIVATE-Footer__navItems__ li:not(:first-child){margin-left:15px}.-cx-PRIVATE-Footer__navItems__ a,.-cx-PRIVATE-Footer__navItems__ a:active,.-cx-PRIVATE-Footer__navItems__ a:focus,.-cx-PRIVATE-Footer__navItems__ a:hover,.-cx-PRIVATE-Footer__navItems__ a:visited{color:#00376b;font-weight:600;text-transform:uppercase}.-cx-PRIVATE-Footer__wrapper__{margin-left:auto;margin-right:auto;max-width:1026px;padding:0 20px}.-cx-PRIVATE-ErrorPage__errorContainer__{text-align:center}@media (max-width:990px){.-cx-PRIVATE-ErrorPage__errorContainer__{padding:100px 40px 0}}.-cx-PRIVATE-ErrorPage__errorContainer__ a,.-cx-PRIVATE-ErrorPage__errorContainer__ a:visited{color:#00376b}.-cx-PRIVATE-Linkshim__followLink__{background-color:#fff;color:#0095f6;border:1px solid #0095f6;border-radius:3px;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center;padding:8px;font:inherit;font-weight:700;width:90%}@media (min-width:736px){.-cx-PRIVATE-Linkshim__followLink__{width:10%}}.-cx-PRIVATE-Linkshim__followLink__:active{opacity:.5}.-cx-PRIVATE-Linkshim__followLink__:focus{color:#0074cc;border:1px solid #0074cc}@media (min-width:736px){.-cx-PRIVATE-Linkshim__goBack__{width:6%}}.-cx-PRIVATE-Linkshim__goBack__:active{opacity:.5}.-cx-PRIVATE-Linkshim__goBack__:focus{border:1px solid #0074cc}.-cx-PRIVATE-GatedContentPage__userAvatarContainer__{height:70px;text-align:center}.-cx-PRIVATE-GatedContentPage__userAvatar__{border-radius:50%;height:100%;width:auto}</style>
+    
+
+            
+    <script type="text/javascript" src="/static/scripts/jquery.js/a4e77326039e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/scripts/bluebar.js/203583927eba.js" crossorigin="anonymous"></script>
+</head>
+    <body class=" p-error dialog-404" style="">
+        
+            <div class="root -cx-PRIVATE-Page__root -cx-PRIVATE-Page__root__">
+                
+                    <div class="page -cx-PRIVATE-Page__body -cx-PRIVATE-Page__body__">
+                        
+                            
+                                <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root -cx-PRIVATE-NavBar__root__">
+    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper -cx-PRIVATE-NavBar__wrapper__">
+        <div class="logo -cx-PRIVATE-NavBar__logo -cx-PRIVATE-NavBar__logo__"><a href="/">Instagram</a></div>
+
+        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft -cx-PRIVATE-NavBar__topBarLeft__">
+            <ul class="top-bar-actions">
+                <li>
+                    <a class="top-bar-home" href="/" label=Home><i></i></a>
+                </li>
+            </ul>
+        </div>
+
+        
+            <div class="top-bar-right account-state" id="top_bar_right">
+                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions -cx-PRIVATE-NavBar__topBarActions__">
+                    
+                    
+                      
+                      <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn -cx-PRIVATE-NavBar__signIn__">
+                          <a href="/accounts/login/" class="loginLink">
+                              <i></i>
+                              <strong class="-cx-PRIVATE-NavBar__signInText -cx-PRIVATE-NavBar__signInText__">Log in</strong>
+                          </a>
+                      </li>
+                      
+                    
+                </ul>
+            </div>
+        
+    </div>
+</header> <!-- .top-bar -->
+                            
+                        
+
+                        
+                        <div class="main -cx-PRIVATE-Page__main -cx-PRIVATE-Page__main__">
+                            
+    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer -cx-PRIVATE-ErrorPage__errorContainer__">
+    
+
+    <h2>Sorry, this page isn&#39;t available.</h2>
+
+    <p>
+        The link you followed may be broken, or the page may have been removed.
+        <a href="/">Go back to Instagram.</a>
+    </p>
+
+
+
+    </div>
+
+                        </div> <!-- .main -->
+                        
+
+                    </div> <!-- .page -->
+
+                    
+                    <footer class="page-footer -cx-PRIVATE-Footer__root -cx-PRIVATE-Footer__root__" role="contentinfo">
+                        <div class="wrapper -cx-PRIVATE-Footer__wrapper -cx-PRIVATE-Footer__wrapper__">
+                            <nav class="-cx-PRIVATE-Footer__nav -cx-PRIVATE-Footer__nav__">
+                                <ul class="-cx-PRIVATE-Footer__navItems -cx-PRIVATE-Footer__navItems__">
+                                    <li><a href="/about/us/">About us</a></li>
+                                    <li><a href="https://help.instagram.com/">Support</a></li>
+                                    <li><a href="https://about.instagram.com/blog/">Press</a></li>
+                                    <li><a href="">API</a></li>
+                                    <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+                                    <li><a href="/legal/privacy/">Privacy</a></li>
+                                    <li><a href="/legal/terms/">
+                                      
+                                          Terms
+                                      
+                                    </a></li>
+                                    
+                                </ul>
+                            </nav>
+
+                            <p class="copyright -cx-PRIVATE-Footer__copyright -cx-PRIVATE-Footer__copyright__">&copy; 2024 Instagram</p>
+                        </div>
+                    </footer>
+                    
+                
+                <div id="reactModalMountPoint"></div>
+            </div> <!-- .root -->
+        
+        
+
+
+        
+            
+
+            
+        
+
+        <script type="text/javascript">
+(function(){
+  function normalizeError(err) {
+    var errorInfo = err.error || {};
+    var getConfigProp = function(propName, defaultValueIfNotTruthy) {
+      var propValue = window._sharedData && window._sharedData[propName];
+      return propValue ? propValue : defaultValueIfNotTruthy;
+    };
+    var windowUrl = window.location.href;
+    var errUrl = err.url || windowUrl;
+    return {
+      line: err.line || errorInfo.message || 0,
+      column: err.column || 0,
+      name: 'InitError',
+      message: err.message || errorInfo.message || '',
+      script: errorInfo.script || '',
+      stack: errorInfo.stackTrace || errorInfo.stack || '',
+      timestamp: Date.now(),
+      ref: windowUrl.indexOf('direct') >= 0 ? 'direct' : windowUrl,
+      deployment_stage: getConfigProp('deployment_stage', ''),
+      frontend_env: getConfigProp('frontend_env', 'prod'),
+      rollout_hash: getConfigProp('rollout_hash', ''),
+      is_prerelease: window.__PRERELEASE__ || false,
+      bundle_variant: getConfigProp('bundle_variant', null),
+      request_url: errUrl.indexOf('direct') >= 0 ? 'direct' : errUrl,
+      response_status_code: errorInfo.statusCode || 0
+    }
+  }
+  window.addEventListener('load', function(){
+    if (window.__bufferedErrors && window.__bufferedErrors.length) {
+      if (window.caches && window.caches.keys && window.caches.delete) {
+        window.caches.keys().then(function(keys) {
+          keys.forEach(function(key) {
+            window.caches.delete(key)
+          })
+        })
+      }
+      window.__bufferedErrors.map(function(error) {
+        return normalizeError(error)
+      }).forEach(function(normalizedError) {
+        var request = new XMLHttpRequest();
+        request.open('POST', '/client_error/', true);
+        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        request.send(JSON.stringify(normalizedError));
+      })
+    }
+  })
+}());
+</script>
+    </body>
+</html>
+
+2024-07-02 13:27:20,896 - instabot version: 0.117.0 (api) - ERROR - Error unknown send request
+2024-07-02 13:27:21,643 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: qp/get_cooldowns/?signed_body=signed_body=4b9c516a5410a3bc128e09c6104a7f042146b9c2023870560c63a43a7f66781c.4&ig_sig_key_version=4&ig_sig_key_version=4 returned response: <Response [200]>
+2024-07-02 13:27:22,544 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/arlink_download_info/?version_override=2.2.1 returned response: <Response [200]>
+2024-07-02 13:27:23,688 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/67078859631/info/ returned response: <Response [200]>
+2024-07-02 13:27:24,290 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [403]>
+2024-07-02 13:27:24,290 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"login_required","error_title":"You\'ve Been Logged Out","error_body":"Please log back in","status":"fail"}'
+2024-07-02 13:27:24,290 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2024-07-02 13:27:25,436 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20 returned response: <Response [200]>
+2024-07-02 13:27:26,281 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&persistentBadging=true&limit=0 returned response: <Response [200]>
+2024-07-02 13:27:27,883 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: discover/topical_explore/?is_prefetch=true&omit_cover_media=true&use_sectional_payload=true&timezone_offset=0&session_id=a8759fbb-9592-4a64-ae55-9902ca903bdc&include_fixed_destinations=true returned response: <Response [200]>
+2024-07-02 13:27:28,893 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: notifications/badge/ returned response: <Response [200]>
+2024-07-02 13:27:29,767 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qp/batch_fetch/ returned response: <Response [200]>
+2024-07-02 13:27:29,769 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\mechanic rayane\Desktop\instagram_bot\Insta_DM_Project/config/amiralifahimi1403@gmail.com.checkpoint
+2024-07-02 13:27:30,533 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/sharifan_adib/usernameinfo/ returned response: <Response [200]>
+2024-07-02 13:27:32,428 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/41385577029/info/ returned response: <Response [200]>
+2024-07-02 13:27:34,702 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5 returned response: <Response [200]>
+2024-07-02 13:27:36,998 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=100 returned response: <Response [200]>
+2024-07-02 13:27:39,456 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=200 returned response: <Response [200]>
+2024-07-02 13:27:41,178 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=300 returned response: <Response [200]>
+2024-07-02 13:27:42,702 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=400 returned response: <Response [200]>
+2024-07-02 13:27:44,267 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=500 returned response: <Response [200]>
+2024-07-02 13:27:46,088 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=600 returned response: <Response [200]>
+2024-07-02 13:27:47,912 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: friendships/41385577029/followers/?rank_token=67078859631_11d7b328-5537-45c5-bddb-cffa019db5b5&max_id=700 returned response: <Response [200]>
+2024-07-02 13:27:47,915 - instabot version: 0.117.0 (bot_direct) - INFO - Going to send 1 messages.
+2024-07-02 13:27:52,718 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/threads/broadcast/text/ returned response: <Response [500]>
+2024-07-02 13:27:52,719 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"action":"item_ack","status_code":"500","message":"None","payload":{"client_context":"83387adc-50fb-4e74-b236-32ea7308170f","message":"None"},"status":"fail"}'
+2024-07-02 13:27:52,719 - instabot version: 0.117.0 (api) - ERROR - Request returns 500 error!
+2024-07-02 13:27:52,719 - instabot version: 0.117.0 (bot_direct) - INFO - Message to ['49155846124', '50182383915', '26428516829', '23137742513', '58439125758', '6656000016', '50076612118', '39393677505', '54559506470', '28615325644', '44114789812', '54867730926', '5565715311', '48558192111', '37305689865', '46635393900', '7918990060', '51249542192', '31533448906', '40904620320', '47645701520', '57766189456', '51067273549', '50862197896', '2364138090', '51756436587', '53865717447', '48973019490', '5477239884', '52243559906', '47376696579', '4517782616', '51566569337', '2934947949', '22257899464', '4468759706', '47326515337', '55464935650', '27392714786', '4767969249', '56734841423', '49151234177', '21703981212', '48738509491', '55272759589', '5467728142', '8965221062', '59100782293', '49085457641', '54861911369', '46402679384', '6817554159', '43359301767', '44332100232', '45621671621', '28194727329', '48598562527', '3170654840', '48773343209', '8054467154', '3869725874', '50985192697', '3862867090', '8059538734', '57416039324', '48272996547', '51120649816', '33852983134', '47923370481', '49338778584', '30629797912', '59853019593', '46092950917', '49793307813', '498236587', '6774731421', '39941071601', '2275487997', '32765476458', '18533333969', '52861763894', '51630602770', '49990449250', '49012210370', '42933347273', '50503021314', '9634505746', '58278806286', '4298020079', '4298020079', '6617719570', '50503021314', '39941071601', '40981734987', '44254216944', '49012210370', '14976412607', '59715602328', '51120649816', '49990449250', '48403990882', '44730479213', '56787129911', '4523162704', '45385465257', '53089888138', '49451275282', '19608985109', '50550395250', '55504123013', '9634505746', '52649322841', '4076782214', '5451677317', '2082664628', '42166246712', '31126713266', '8985839173', '8680205272', '3663606900', '7475513715', '58645983363', '2135315159', '54242484963', '48487764243', '41824721914', '4748854142', '50724703745', '56295348222', '50934589148', '48731028394', '54121666075', '61273604529', '50499058924', '55058788025', '5694505885', '49022443852', '47811223877', '46171514036', '39178649459', '51678029217', '54783237044', '30842805984', '63090535205', '13289676984', '48454842863', '40874495066', '45236248559', '48787677689', '47872611281', '45200820000', '63957473828', '49552260732', '32704960433', '1575056679', '59701175742', '2023286120', '58676189352', '2314310120', '4077444153', '21850654745', '41783756374', '52917183770', '50432024635', '53484710349', '8618561544', '49409218965', '53875144296', '36182482940', '52657833782', '52439229447', '12590907040', '49030548835', '44796023132', '21513219645', '62013323503', '31831956553', '45751956693', '55482408432', '63012577226', '46248116642', '45154615986', '49693656618', '60294688736', '45911630288', '62224679389', '11892917597', '44184229459', '47559209145', '63012577226', '46248116642', '11937918918', '53656940171', '58438122786', '21513219645', '4353283333', '62224679389', '9021957103', '6698964019', '48667289349', '54648105142', '45751956693', '44055655756', '49755047322', '49022742706', '47143770189', '49319128587', '41783756374', '56404253324', '50128786579', '48190703906', '53143158937', '38984897732', '45911630288', '3638959448', '55471284167', '48615009858', '3894001059', '16034019706', '48484113049', '60048827910', '1735141426', '1655050545', '48380156255', '8248581728', '1907065332', '48815759200', '56601943561', '53683745075', '1406937929', '48346350169', '50916876379', '16826246451', '38963150953', '12155034035', '44496100435', '8346719855', '61207630051', '38764908571', '47361233921', '56478389376', '52258951974', '3188171521', '42778698065', '53470583858', '45421731056', '51173225529', '30911396451', '37004684206', '11795538573', '45249162887', '4984091807', '8028280911', '974122093', '49754741985', '53660429751', '45154615986', '18378344973', '55001214742', '6779062665', '47559209145', '55271896243', '53195829159', '54071172090', '47429813090', '6021471241', '64273952274', '52606992085', '13867499875', '53843820975', '3647075101', '42452753961', '51871471790', '7055455619', '6769923859', '34339878956', '4428677764', '3575299160', '5980431406', '54860078178', '18398624326', '2309072271', '34709986521', '52461458689', '5359362264', '3834820666', '52754757335', '50854946903', '7229001903', '8786858114', '5790203475', '8151450965', '34257761386', '64273952274', '42436279189', '12394150200', '49711989852', '48041182702', '65864604687', '6846497400', '6274153586', '3896573389', '53213435299', '52258951974', '52606992085', '53208249116', '51936317897', '53865426298', '53627997177', '47370381817', '6807194074', '44852352191', '51871471790', '44450171906', '52711525955', '53925957918', '7889457835', '49597826972', '5852227872', '25766039823', '8248581728', '44473531533', '36852329595', '46472136886', '7136524395', '43721923108', '48612278089', '2003705878', '40969741807', '1692370788', '50709016450', '3266690595', '3277605370', '14769270073', '44320195018', '12084310222', '3104124380', '52721201848', '23687573628', '8438573063', '45131545304', '50854946903', '3196573286', '1570357095', '1528198053', '7195425127', '5724573865', '14046791216', '2247584600', '4428677764', '3632580800', '52584326371', '19384320595', '39764570332', '55973474056', '44257521834', '6014554713', '43464470029', '39552070735', '4300115412', '61958856493', '52111314064', '8288339373', '22625111625', '1473523606', '37076393434', '27459964715', '44762864198', '32045192252', '60642232183', '33071724066', '7789506957', '52754757335', '45512867459', '58154346261', '53678683041', '8280507969', '48323171662', '7943816273', '51240953349', '62208307683', '9232924022', '50775611970', '6214862474', '55088739731', '26278754535', '2105918122', '35577737264', '52059628423', '2105918122', '35577737264', '52059628423', '33274858920', '19393804523', '43948904078', '54404486870', '60320036614', '65632300877', '50826532870', '50251665253', '40431021054', '50715102160', '2866393997', '52149647542', '62940910526', '49406858394', '4217399249', '5830675756', '46297995344', '58154346261', '3033141954', '13084522217', '55704457746', '44729109239', '5944646671', '6321224946', '7544596367', '3130059826', '7877707129', '3260081425', '4577737222', '52438141613', '1992189336', '4748854142', '50737944449', '3703821733', '4141335399', '49275909252', '59460540189', '7246206931', '9006613989', '1954114971', '44453534912', '51674178194', '9415198408', '6807045162', '12264289958', '42059758171', '3102067634', '49290429625', '2931864043', '45178931429', '1695486942', '54082172446', '6046950233', '9930353925', '62208307683', '49605688556', '48968027419', '2287671157', '38277504173', '6113375401', '58129855637', '61288529650', '44579617777', '5529362487', '4725613986', '50711069929', '41583707719', '59230777784', '47792423891', '50646345593', '14003370328', '52211106448', '10979963156', '44660357451', '34803490795', '2579453347', '2154567739', '45229055721', '14465457897', '13098045182', '57056902382', '1021813442', '48561549738', '4458426211', '24747805258', '50539662419', '3264179393', '2165735973', '54286147515', '45883289183', '4660130692', '48380336804', '4841538513', '2159192126', '19228641109', '31578498757', '31465806070', '54092957420', '40568460117', '621524192', '3260081425', '14554249507', '58286105626', '9126350874', '44428490636', '8933510033', '51872103075', '45714678465', '1021813442', '7068929738', '24747805258', '5651345163', '12666518508', '10708817542', '1954114971', '3703821733', '53388649480', '6667041147', '44976130144', '4952574846', '10448953387', '34682093432', '3647234533', '49330800200', '43948904078', '52626214809', '59474476030', '5381951851', '60331016585', '26108976423', '32062563795', '35898651598', '5973288191', '16250391947', '44989040720', '4277956651', '3251109535', '4460728542', '66242643484', '48412670739', '4937258423', '1475092913', '47666466292', '21233451410', '51485501680', '39418454695', '49018998361', '1539371144', '6113375401', '13098045182', '41583707719', '37202386043', '49613662540', '37301314010', '45421390383', '15996769646', '44703940782', '62863405764', '42531041117', '21981011497', '54011307423', '58365884576', '50188927250', '4660130692', '4841538513', '3687235545', '51102860399', '8352567814', '49860903223', '8396029919', '8492642816', '7246206931', '48527208257', '56690959224', '3312059510', '3890641782', '2094542102', '53671888017', '53560161848', '57019583267', '17327585014', '3263427734', '3258694371', '8402323458', '63600424385', '52680301377', '64703301225', '2218050914', '56765771610', '48426275373', '49221968687', '49846871991', '6029867615', '49516198500', '8434043059', '53213470230', '29205734108', '2218050914', '56765771610', '48426275373', '49221968687', '49846871991', '5071235993', '49516198500', '8434043059', '6029867615', '53213470230', '29205734108', '10177916783', '46264373946', '52475501230', '6051942972', '3485397956', '67259366694', '39801158625', '2165735973', '62789991420', '7372089335', '6647998177', '8095761228', '50610330991', '3548792701', '4250690891', '25509648882', '8142786385', '51274269958', '2223361761', '57677901645', '1999608617', '49066964617', '3264179393', '37378408978', '52978704646', '52746609087', '10007353317', '4667520677', '31513549478', '3494757943', '3861144779', '54037987412', '43113923131', '47779414362', '56702527125', '31938138638', '11527205215', '47356652043', '50115903946', '57532935091', '65674149408', '53226858584', '4173741714', '485733002', '56255727877', '47916828754', '53022966942', '1543022232', '4860206653', '64733207436', '57393959583', '50256650483', '63921191729', '60661017939', '1536021375', '1910722530', '3460543858', '47723043592', '52354727148', '44486769990', '65842026564', '5740040482', '49115583385', '2320462105', '56797692890', '9248039344', '7892473303', '16493885978', '65378784274', '8117518301', '63982004312', '47139911514', '18621902954', '49481333895', '45411216921', '44656568334', '1420622328', '3576912874', '62506193263', '2239949500', '1198995482', '5559946248', '39512113179', '55098539563', '64152012464', '31233364568', '4786972842', '9129109386', '65144832964', '65144832964', '5862529190', '58738828837', '45704281998', '11611809500', '40666845048', '34120437255', '3258694371', '2231343936', '14699906717', '49860903223', '5631808716', '4480818167', '49066964617', '43815717099', '43989117220', '48350332939', '2006277586', '4119166703', '5005832019', '5419454569', '2085309254', '50284934127', '55245735273', '62324632718', '25288000240', '23545308086', '50256650483', '2223174549', '4620871378', '49481333895', '7675157536', '55712502992', '11924814563', '23048454527', '41521043283', '3056107376', '1823215886', '37306286300', '46823409504', '5559946248', '5572133103', '3198210443', '39512113179', '3284709346', '8959919204', '16883602498', '4935851158', '56766529540', '16134994892', '22033081347', '55117260459', '50825846479', '49420101280', '66844181640', '48654096821', '51048488848', '61356573530', '22966702191', '7647811783', '49901805130', '3571027283', '53173618213', '60928735774', '48663406742', '51216523696', '7265356733', '64250786538', '3093736847', '61216437955', '23425828658', '1771351251', '65930305891', '6364936886', '6250391293', '42269444135', '44472373231', '46566241907', '50206574323', '51613273898', '62324255595', '62662407689', '5973554358', '6796828279', '54416522862', '56702527125', '1729303395', '49661748387', '44804363563', '66597545120', '54071296944', '59407353502', '44360527483', '57360908894', '52632788091', '48101968407', '53001841810', '36914825255', '57279867588', '65700976731'] wasn't sent
+2024-07-02 13:28:02,723 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\mechanic rayane\Desktop\instagram_bot\Insta_DM_Project/config/amiralifahimi1403@gmail.com.checkpoint
+2024-07-02 13:28:02,724 - instabot version: 0.117.0 (bot) - INFO - Total messages: 1/65
+2024-07-02 13:28:02,724 - instabot version: 0.117.0 (bot) - INFO - Total requests: 521
